@@ -25,5 +25,4 @@ jobs:
 
       - name: Run Scan
         run: |
-          docker run -e OSS_USERNAME=pioter530@wp.pl -e OSS_KEY=c3aff65db27c78cb3d4d14e9576afec936d4f74 -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=b9181a72-8036-484d-977e-dbfe1187c1fd -e MIXEWAY_PROJECT_ID=191 -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=BigCatStudio_lab_secure_app -e COMMIT_ID=test -e BRANCH=master -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest
-
+          docker run -e OSS_USERNAME=pioter530@wp.pl -e OSS_KEY=c3aff65db27c78cb3d4d14e9576afec936d4f74 -e MIXEWAY_URL=https://hub.mixeway.io -e MIXEWAY_KEY=b9181a72-8036-484d-977e-dbfe1187c1fd -e MIXEWAY_PROJECT_ID=191 -e MODE=STANDALONE -e MIXEWAY_PROJECT_NAME=BigCatStudio_lab_secure_app -e COMMIT_ID=test -e BRANCH=master -v /opt/lab_sec_audit/sast:/opt/sources mixeway/scanner:latest || exit 1
